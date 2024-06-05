@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/CSS">
+      body {
+        text-align: center;
+        background-color: rgb(203, 210, 224);
+        border-style: dashed;
+      }
+      input:hover {
+        color: blue;
+        border-radius: 30%;
+      }
+      h2 {
+        color: black;
+        font-family: fantasy;
+        font-size: small;
+      }
+      h1 {
+        color: darkblue;
+        font-size: large;
+        font-variant: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 2px 1px 1px red;
+      }
+      h3 {
+        font-size: medium;
+        font-family: cursive;
+        color: crimson;
+      }
+      h4 {
+        font-size: medium;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: dimgray;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: #000;
+      }
+      a:hover {
+        color: crimson;
+      }
+      a:active {
+        color: rgb(0, 255, 94);
+      }
+      input.submit:hover {
+        color: blue;
+      }
+      input:focus {
+        color: cornflowerblue;
+      }
+    </style>
+    <title>Form</title>
+  </head>
+  <body>
+    <h2>In The Name Of Allah The Beneficient The Merciful</h2>
+    <h1>AL-IMRA'ATUS-SOLIHAAT</h1>
+    <h3>20<sup>th</sup> Annual Dawah Camp</h3>
+    <h4>DELEGATES REGISTRATION FORM</h4>
+    <form autocomplete="on">
+      <label for="fname"> First name:</label><br />
+      <input type="text" name="fname" id="fname" required /><br /><br />
+      <label for="mnane">Middle name:</label><br />
+      <input type="text" name="mname" id="mname" required /><br /><br />
+      <label for="lname"> Last name:</label><br />
+      <input type="text" name="lname" id="lname" required /><br /><br />
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        min="1"
+        max="80"
+        required
+      /><br /><br />
+      <label for="address">Address:</label><br />
+      <input type="text" name="address" id="address" required /><br /><br />
+      <label for="tel">Phone number:</label><br />
+      <input type="tel" name="tel" id="tel" required /><br /><br />
+      <label for="email">E-mail:</label><br />
+      <input type="email" name="email" id="email" /><br /><br />
+      <label for="country">Country:</label><br />
+      <input
+        type="text"
+        name="country"
+        id="country"
+        value="Nigeria"
+      /><br /><br />
+      <label for="state">State:</label><br />
+      <input list="state" />
+      <datalist id="state">
+        <option value="Lagos"> </option>
+        <option value="Ogun"> </option>
+        <option value="Oyo"> </option>
+        <option value="Osun"> </option>
+        <option value="Ondo"> </option>
+        <option value="Ekiti"> </option></datalist
+      ><br /><br />
+      <label>Gender:</label><br />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="male" id="male" /><br />
+      <label for="female">Female</label>
+      <input
+        type="radio"
+        name="gender"
+        value="female"
+        id="female"
+      /><br /><br />
+      <label for="message">Tell us about yorself:</label><br />
+      <textarea
+        name="message"
+        rows="10"
+        cols="30"
+        id="message"
+        style="border-style: double blue;"
+      >
+      </textarea
+      ><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+    <footer
+      style="
+        margin: 2in;
+        border-style: dotted;
+        border-color: rgb(106, 127, 82);
+      "
+    >
+      <p>
+        &copy copyright <br />
+        Abdulhameed
+      </p>
+      <p>
+        <a href="mailto:oladapoabulhameed@gmail.com"
+          >oladapoabulhameed@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
